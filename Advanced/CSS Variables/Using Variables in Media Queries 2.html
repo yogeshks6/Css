@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --blue:rgb(15, 171, 255);
+            --white: rgb(255, 255, 255);
+        }
+        .container{
+            --fontsize: 25px;
+        }
+        body{
+            background-color: var(--blue);  
+        }
+        h2{
+            border-bottom: 2px solid var(--blue);
+        }
+        .container{
+            color: var(--blue);
+            background-color: var(--white);
+            padding: 15px;
+            font-size: var(--fontsize);
+        }
+        @media screen and (min-width:450px) {
+            .container{
+                --fontsize:50px;
+            }
+            :root{
+                --blue: lightblue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Using Variables in Media Queries</h1>
+
+<div class="container">
+  <h2>Lorem Ipsum</h2>
+  <p>When the browser's width is 450px or wider, set the --fontsize variable value to 50px and the --blue variable value to lightblue. Resize the browser window to see the effect.</p>
+</div>
+</body>
+</html>
